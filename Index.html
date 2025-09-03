@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto de Acessibilidade</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #ffffff;
+      color: #222;
+      margin: 20px;
+    }
+
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: #ffdd00;
+      text-decoration: none;
+    }
+
+    nav a:focus, nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      margin-top: 20px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    button {
+      background-color: #004080;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:focus {
+      outline: 3px solid #ffdd00;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Meu Projeto de Acessibilidade</h1>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre o projeto</h2>
+      <p>
+        Este é um exemplo de página criada para aplicar boas práticas de acessibilidade na web.
+        Aqui utilizamos elementos semânticos, bom contraste de cores e textos alternativos para imagens.
+      </p>
+      <img src="https://via.placeholder.com/600x300" alt="Imagem ilustrativa com fundo cinza e texto exemplo">
+    </section>
+
+    <section id="contato">
+      <h2>Entre em contato</h2>
+      <form>
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome"><br><br>
+
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem"></textarea><br><br>
+
+        <button type="submit" aria-label="Enviar mensagem de contato">Enviar</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
